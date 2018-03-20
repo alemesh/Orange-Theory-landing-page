@@ -6,8 +6,13 @@
 @media only screen and (max-width : 1200px)
   .visual-content
     direction: rtl
-    width: 100% //На мобиле сделать 100%
+    width: 50% //На мобиле сделать 100%
     padding: 20px 15px
+    .title-header
+      font-size: 43px
+    .description-header
+      font-size: 18px
+
 
   .header-section
     min-height: 600px
@@ -18,12 +23,18 @@
       top: 0
       left: 0
       width: 100%
-      bottom: 60%
+      bottom: 80%
       background: linear-gradient(to bottom,  rgba(255,0,0,5)  27%, rgba(0,0,0,0)  50%)
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+  .visual-content
+    .title-header
+      font-size: 36px
+    .description-header
+      font-size: 15px
+
   //.wrap-header
   //  min-height: 860px
   //.header-section
@@ -49,13 +60,34 @@
     .form-row
       width: 100%
       margin-bottom: 15px
+      .maska-input
+        transform: skewX(0deg)
+      .btn-maska
+        transform: skewX(-20deg)
+
+    .form-grow-4
+      order: 2
+      margin: 0 18px
+
 
     .form-control
       height: 42px
       font-size: 18px
+      transform: skewX(-20deg)
 
     .btn
       height: 42px
+      transform: skewX(20deg)
+
+    .checkbox-margin
+      margin: 0 13px 15px
+      .checbox-form
+        font-size: 17px
+
+  .items-list
+    margin: 0 -10px
+    li
+      width: 50%
 
 
 /* Small Devices, Tablets */
@@ -68,13 +100,56 @@
     width: 220px
     margin: 0 auto 30px
 
+  .visual-content
+    direction: rtl
+    width: 100% //На мобиле сделать 100%
+    padding: 20px 15px
+    text-align: center
+    .title-header
+      margin: 1px 0 30px
+      //font-size: 27px
+    .description-header
+      margin: 0
+
+
   .items-list
+    margin: 0 -10px
     li
       width: 50%
+      padding: 0 20px
+
+  .image-item
+    width: 100px
+    height: 100px
+
+  .text-items
+    font-family: "OpenSansHebrew-Regular"
+    font-size: 12px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .main
+    h3
+      font-size: 23px
+      margin: 40px 1px 50px
+
+  .items-list
+    li
+      padding: 0 20px 15px
+
+  .visual-content
+    padding: 20px 0
+    .title-header
+      margin: 1px 0 12px
+      font-size: 30px
+    .description-header
+      margin: 0
+      font-size: 15px
+
+    .logo
+      margin: 0 auto 15px
+
+
 
 
 /* Custom, iPhone Retina */

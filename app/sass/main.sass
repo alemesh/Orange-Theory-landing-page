@@ -95,14 +95,14 @@ img
     line-height: 1.103
     font-style: italic
     text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 0.5)
-    margin: 0 0 30px
+    margin: 70px 0 30px
   .description-header
     font-size: 28px
     font-family: "OpenSansHebrew-Bold"
     color: rgb(255, 255, 255)
     line-height: 1.686
     text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 0.5)
-    margin: 0
+    margin: 0 0 0 36px
 
 //==============================================
 
@@ -116,35 +116,7 @@ img
 
 
 
-.main-items
-  margin: 0 auto
-  max-width: 1080px
 
-.items-list
-  display: flex
-  flex-wrap: wrap
-  padding: 0
-  text-align: center
-  list-style: none
-  margin: 0 -70px
-
-  li
-    padding: 0 70px
-    width: 25%
-
-
-
-
-.image-item
-  display: flex
-  flex-wrap: wrap
-  align-items: center
-  justify-content: center
-  border-radius: 50%
-  background: #000
-  width: 135px
-  height: 135px
-  margin: 0 auto 20px
 
 //.wrap-header
 //  min-height: 1074px
@@ -262,6 +234,12 @@ img
       overflow: hidden
       border-radius: 13px
       background-color: rgb(255, 255, 255)
+      transition: all .5s ease
+      &:hover
+        background-color: #dad8d2
+        //border-top: 2px solid red
+        text-decoration: none
+        color: #111
 
   .checkbox-margin.form-row
     width: 100%
@@ -281,26 +259,33 @@ img
     font-family: "OpenSansHebrew-Regular"
     line-height: 1.2
     text-decoration: none
-    transition: all .5s ease
-    &:hover
-      background-color: #dad8d2
-      //border-top: 2px solid red
-      text-decoration: none
-      color: #111
+
 
   .checkbox-margin
     margin-top: 10px
     .checbox-form
       color: #fff
       font-family: "OpenSansHebrew-Regular"
-      font-size: 16px
+      font-size: 18px
 
-  .btn
-    border-radius: 13px
-    //background: #e42a37
+  .btn-maska
     background-image: -moz-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
     background-image: -webkit-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
     background-image: -ms-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+    &:hover
+      //background-color: #c11b27
+      background-image: -moz-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
+      background-image: -webkit-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
+      background-image: -ms-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
+      box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
+      text-decoration: none
+
+  .btn
+    transform: skewX(20deg)
+    background: transparent
+    border-radius: 13px
+    //background: #e42a37
+
     //box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
     font-family: "OpenSansHebrew-Bold"
     color: white
@@ -314,13 +299,7 @@ img
     font-size: 23px
     text-decoration: none
     //transition: all .5s ease
-    &:hover
-      //background-color: #c11b27
-      background-image: -moz-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
-      background-image: -webkit-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
-      background-image: -ms-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
-      box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
-      text-decoration: none
+
 
 //color: #111
 
@@ -328,12 +307,20 @@ img
 
 .main
   min-height: 1017px
+  background-size: contain
+  //direction: rtl
+  text-align: center
   position: relative
   width: 100%
   overflow: hidden
-  direction: rtl
+  //direction: rtl
   background-repeat: no-repeat
   opacity: .8
+  h3
+    margin: 70px 15px 100px
+    color: rgb(255,168,0)
+    font-size: 30px
+
 
 
   .background-left
@@ -349,6 +336,54 @@ img
     padding: 80px 30px 100px
 
     .items-list
+
+
+
+.main-items
+  margin: 0 auto
+  max-width: 1080px
+
+
+.items-list
+  display: flex
+  flex-wrap: wrap
+  padding: 0
+  text-align: center
+  list-style: none
+  margin: 0 -70px
+  //margin: 0 -10px
+
+  li
+    padding: 0 60px
+    //padding: 0 20px
+    width: 25%
+
+
+
+
+
+.image-item
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  //background: #000
+  background-image: -moz-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+  background-image: -webkit-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+  background-image: -ms-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+  width: 135px
+  //width: 100px
+  height: 135px
+  //height: 100px
+  margin: 0 auto 20px
+
+.text-items
+  font-family: "OpenSansHebrew-Regular"
+  font-size: 17px
+
+
+
 
 
 .footer
