@@ -32,13 +32,13 @@
 <div class="wrapper">
 	<div class="wrap-header">
 		<div class="header-section" style="background-image: url(img/img-visual.jpg)">
-			<!--<div class="left-background"></div>-->
+			<span class="label">Gofman creative</span>
 			<div class="main-holder">
 				<div class="visual-wrap">
 					<div class="visual-content">
 						<div class="logo">
 							<a href="#">
-								<img src="img/logo-header.png" alt="#">
+								<img src="img/logo-1.png" alt="#">
 							</a>
 						</div>
 						<div class="visual-text">
@@ -50,59 +50,39 @@
 				</div>
 			</div>
 
-
-
-
-
-
-
-
-			<!--<div class="central">-->
-				<!--&lt;!&ndash;<img class="img-left-header" src="img/reliable-developer-copy11.png" alt="#">&ndash;&gt;-->
-				<!--<div class="logo">-->
-					<!--<a href="#" class="main-logo">-->
-						<!--<img class="logo-header" src="img/logo-header.png" alt="#">-->
-					<!--</a>-->
-
-					<!--<div class="visual-content">-->
-						<!--<div class="title-heaer">מהפיכת האימונים<br> הכתומה שכבשה את<br> העולם הגיעה לישראל!</div>-->
-						<!--<div class="description-header">רוצים לשרוף קלוריות מבלי לשרוף שעות<br> מיותרות ולהמתין שיתפנה מכשיר בחדר הכושר?</div>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
 		</div>
 		<div class="form-hold">
 			<div class="main-holder">
-				<h3>השאירו פרטים ונחזור אליכם!</h3>
+				<h3 class="form-title">השאירו פרטים ונחזור אליכם!</h3>
 				<form action="form_processing.php" class="form form-validation" method="post">
 					<!--<div class="success-msg">-->
 					<!--<p>תודה!  פרטיך התקבלו בהצלחה.</p>-->
 					<!--</div>-->
 					<div class="form-row-wrap">
-						<div class="form-row">
+						<div class="form-row form-grow-1">
 							<div class="maska-input">
-								<input name="name" class="form-control" data-required="true" type="text"  placeholder="שם מלא*">
+								<input name="name" class="form-control" required data-required="true" type="text"  placeholder="*שם מלא">
 							</div>
 						</div>
 
 
-						<div class="form-row">
+						<div class="form-row form-grow-2">
 							<div class="maska-input">
-								<input name="tel" class="form-control" data-required="true" type="text" placeholder="טלפון*" data-regexp="(\+?\d[- .]*){7,13}" title="International, state or local telephone number">
+								<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" data-regexp="(\+?\d[- .]*){7,13}" title="International, state or local telephone number">
 							</div>
 						</div>
-						<div class="form-row">
+						<div class="form-row form-grow-3">
 							<div class="maska-input">
-								<input name="email" class="form-control" type="email" placeholder="דוא”ל">
+								<input name="email" class="form-control" type="email" placeholder="מייל">
 							</div>
 						</div>
-						<div class="form-row">
-							<div class="maska-input">
+						<div class="form-row form-grow-4">
+							<div class="maska-input btn-maska">
 								<input type="submit" class="btn" value="שלח >">
 							</div>
 						</div>
-						<div class="checkbox-margin form-row">
-							<input type="checkbox" id="subscribeNews">
+						<div class="checkbox-margin form-row form-grow-5">
+							<input class="check-stile" name="check1" type="checkbox" id="subscribeNews" >
 							<label class="checbox-form" for="subscribeNews">אני מעוניין לקבל חומר שיווקי מעת לעת</label>
 						</div>
 					</div>
@@ -111,30 +91,88 @@
 		</div>
 	</div>
 
-	<div class="main" style="background-image: url(img/background-main.png)">
+	<div class="main" style="background-image: url(img/222.png)">
 		<div class="main-holder">
 			<div class="wrap-main">
-				<h3>?OrangetheoryFITNESS למה</h3>
+                <div class="wrap-title">
+				    <h3>?Orangetheory FITNESS למה</h3>
+                </div>
 				<div class="main-items">
 					<ul class="items-list">
 						<li>
 							<span class="image-item">
-								<img src="" alt="">
+								<img src="img/list-obj-1.png" alt="">
 							</span>
 							<span class="text-items">
-								<p>some text</p>
+								<p>אימון קבוצתי<br> עם מדריך אישי</p>
 							</span>
 						</li>
-						<li><span class="image-item"></span><span class="text-items"></span></li>
-						<li><span class="image-item"></span><span class="text-items"></span></li>
-						<li><span class="image-item"></span><span class="text-items"></span></li>
+						<li>
+							<span class="image-item">
+								<img src="img/list-33.png" alt="">
+							</span>
+							<span class="text-items">
+								<p>המשך שריפת קלוריות <br>עד 36 שעות לאחר האימון</p>
+							</span>
+						</li>
+						<li>
+							<span class="image-item">
+								<img src="img/list-obj-3.png" alt="">
+							</span>
+							<span class="text-items">
+								<p>אימון אפקטיבי<br> בקצב גבוה</p>
+							</span>
+						</li>
+						<li>
+							<span class="image-item">
+								<img src="img/list-obj-4.png" alt="">
+							</span>
+							<span class="text-items">
+								<p>מעקב און ליין<br> אחר מדדי הגוף</p>
+							</span>
+						</li>
 					</ul>
 				</div>
+                <div class="main-list">
+                    <h3 class="main-list-title">מהו אפקט האורנג’?</h3>
+                    <ul class="desctop">
+                        <li class="first-list">אנו מאמינים כי אימון קבוצתי קטן מעודד הישגים ועם זאת שומר על יחס אישי.</li>
+                        <li class="second-list">שעת האימון מחולקת לפרקי זמן של אימוני כוח וסיבולת.</li>
+                        <li class="first-list">האימון מגובה ע”י מדע צריכת החמצן לאחר אימון עודף (EPOC).</li>
+                        <li class="second-list">במהלך האימון, תוכלו לעקוב על גבי מסכים בזמן אמת אחר קצב הלב ומידת המאמץ שלכם.</li>
+                        <li class="first-list">המידע על שריפת הקלוריות הוא בזמן אמת, באמצעות רצועת דופק ייעודית.</li>
+                        <li class="second-list">שריפת קלוריות בממוצע: נשים – כ-<b>600</b> | גברים – כ-<b>900</b>.</li>
+                    </ul>
+					<ul class="mobile">
+						<li class="first-list">אנו מאמינים כי אימון קבוצתי קטן<br> מעודד הישגים ועם זאת שומר על יחס אישי.</li>
+						<li class="second-list">שעת האימון מחולקת לפרקי זמן<br> של אימוני כוח וסיבולת.</li>
+						<li class="first-list">האימון מגובה ע”י מדע צריכת החמצן<br> לאחר אימון עודף (EPOC).</li>
+						<li class="second-list">במהלך האימון, תוכלו לעקוב על גבי מסכים בזמן<br> אמת אחר קצב הלב ומידת המאמץ שלכם.</li>
+						<li class="first-list">המידע על שריפת הקלוריות הוא בזמן אמת,<br> באמצעות רצועת דופק ייעודית.</li>
+						<li class="second-list"><b>שריפת קלוריות בממוצע:<br> נשים – כ-600 | גברים – כ-900.</b></li>
+					</ul>
+                    <div class="wrap-list">
+                        <!--<p class="bold-list">אתם תמשיכו לשרוף קלוריות עד כ- 36 שעות לאחר האימון!</p>-->
+                        <p class="bold-list">אתם תמשיכו לשרוף קלוריות עד כ- 36 שעות לאחר האימון! זה מה שנקרא אפקט האורנג'! </p>
+                        <p class="orang-list">זה מה שנקרא אפקט האורנג׳!</p>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
-	<div class="footer">
 
+	<div class="footer">
+        <div class="main-holder">
+            <div class="wrap-title-footer">
+                <h3>אז למה להמשיך ולחכות שהמכשיר שלכם בחדר הכושר יתפנה? </h3>
+                <div class="button">
+                    <div class="button-maska">
+                        <a href="https://www.orangetheoryfitness.com/" target="_blank">לפרטים נוספים ></a>
+                    </div>
+                </div>
+                <!--<p class="copyrate">UX & Design by GOFMAN CREATIVE </p>-->
+            </div>
+        </div>
 
 	</div>
 

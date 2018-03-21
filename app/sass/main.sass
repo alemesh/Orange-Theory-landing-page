@@ -32,7 +32,7 @@ body textarea:focus:required:invalid
 	color: #666
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	//color: #666
 
 html, body
 	height: 100%
@@ -68,12 +68,36 @@ img
   max-width: 100%
   height: auto
 
+.label
+  position: absolute
+  padding: 15px 15px
+  left: -70px
+  bottom: 23%
+  color: white
+  text-transform: uppercase
+  font-size: 17px
+  transform: rotate(-90deg)
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 10px
+    height: 10px
+    background: white
+    border-radius: 50%
+
+
 .main-holder
   max-width: 1370px
   margin: 0 auto
   padding: 0 35px
+  .form-title
+    direction: rtl
 
 .header-section
+  position: relative
   min-height: 900px
   background-size: cover
 
@@ -88,21 +112,23 @@ img
   direction: rtl
   width: 50% //На мобиле сделать 100%
   padding: 20px 15px
+  .logo
+    z-index: 23
   .title-header
     font-family: "OpenSansHebrew-ExtraBoldItalic"
-    font-size: 58px
+    font-size: 60px
     color: rgb(255, 255, 255)
     line-height: 1.103
     font-style: italic
-    text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 0.5)
-    margin: 0 0 30px
+    text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 1.5)
+    margin: 70px 0 26px
   .description-header
     font-size: 28px
     font-family: "OpenSansHebrew-Bold"
     color: rgb(255, 255, 255)
-    line-height: 1.686
-    text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 0.5)
-    margin: 0
+    line-height: 1.5
+    text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 1.5)
+    margin: 0 0 0 36px
 
 //==============================================
 
@@ -116,35 +142,7 @@ img
 
 
 
-.main-items
-  margin: 0 auto
-  max-width: 1080px
 
-.items-list
-  display: flex
-  flex-wrap: wrap
-  padding: 0
-  text-align: center
-  list-style: none
-  margin: 0 -70px
-
-  li
-    padding: 0 70px
-    width: 25%
-
-
-
-
-.image-item
-  display: flex
-  flex-wrap: wrap
-  align-items: center
-  justify-content: center
-  border-radius: 50%
-  background: #000
-  width: 135px
-  height: 135px
-  margin: 0 auto 20px
 
 //.wrap-header
 //  min-height: 1074px
@@ -262,9 +260,19 @@ img
       overflow: hidden
       border-radius: 13px
       background-color: rgb(255, 255, 255)
+      transition: all .5s ease
+      &:hover
+        background-color: #dad8d2
+        //border-top: 2px solid red
+        text-decoration: none
+        color: #111
 
   .checkbox-margin.form-row
     width: 100%
+
+  .check-stile
+    height: 22px
+    width: 22px
 
   .form-control
     transform: skewX(20deg)
@@ -275,32 +283,40 @@ img
     width: 100%
     //width: 250px
     height: 50px
+    //color: #b5b5b5
     color: #b5b5b5
     border: none
     font-size: 23px
     font-family: "OpenSansHebrew-Regular"
     line-height: 1.2
     text-decoration: none
-    transition: all .5s ease
-    &:hover
-      background-color: #dad8d2
-      //border-top: 2px solid red
-      text-decoration: none
-      color: #111
+
 
   .checkbox-margin
     margin-top: 10px
     .checbox-form
       color: #fff
       font-family: "OpenSansHebrew-Regular"
-      font-size: 16px
+      font-size: 18px
 
-  .btn
-    border-radius: 13px
-    //background: #e42a37
+  .btn-maska
     background-image: -moz-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
     background-image: -webkit-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
     background-image: -ms-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+    &:hover
+      //background-color: #c11b27
+      background-image: -moz-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
+      background-image: -webkit-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
+      background-image: -ms-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
+      box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
+      text-decoration: none
+
+  .btn
+    transform: skewX(20deg)
+    background: transparent
+    border-radius: 13px
+    //background: #e42a37
+
     //box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
     font-family: "OpenSansHebrew-Bold"
     color: white
@@ -314,26 +330,34 @@ img
     font-size: 23px
     text-decoration: none
     //transition: all .5s ease
-    &:hover
-      //background-color: #c11b27
-      background-image: -moz-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
-      background-image: -webkit-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
-      background-image: -ms-linear-gradient( 90deg, rgb(255,168,0) 0%, rgb(255,48,0) 100%)
-      box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
-      text-decoration: none
+
 
 //color: #111
 
 
 
 .main
-  min-height: 1017px
+  //min-height: 1017px
+  min-height: 990px
+  background-size: cover
+  //direction: rtl
+  text-align: center
   position: relative
   width: 100%
   overflow: hidden
-  direction: rtl
+  //direction: rtl
   background-repeat: no-repeat
   opacity: .8
+
+  .wrap-title
+    margin: 70px 15px 80px
+    color: #ff8800
+    font-size: 30px
+    font-family: "OpenSansHebrew-Bold"
+
+
+
+
 
 
   .background-left
@@ -351,24 +375,150 @@ img
     .items-list
 
 
+
+
+
+.main-items
+  margin: 0 auto
+  max-width: 1080px
+
+
+.items-list
+  display: flex
+  flex-wrap: wrap
+  padding: 0
+  text-align: center
+  list-style: none
+  margin: 0 -70px
+  //margin: 0 -10px
+
+  li
+    padding: 0 60px
+    //padding: 0 20px
+    width: 25%
+
+
+  .main-list-title
+    margin: 60px 15px -10px
+
+
+.image-item
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  //background: #000
+  background-image: -moz-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+  background-image: -webkit-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+  background-image: -ms-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+  width: 135px
+  //width: 100px
+  height: 135px
+  //height: 100px
+  margin: 0 auto 20px
+
+.text-items
+  font-family: "OpenSansHebrew-Regular"
+  font-size: 18px
+
+
+.main-list
+  direction: rtl
+  font-size: 24px
+  margin: 0 70px
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      margin: 0 0 10px
+    .first-list
+      font-family: "OpenSansHebrew-Bold"
+      background-image: -moz-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(236,236,236) 50%, rgb(255,255,255) 100%)
+      background-image: -webkit-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(236,236,236) 50%, rgb(255,255,255) 100%)
+      background-image: -ms-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(236,236,236) 50%, rgb(255,255,255) 100%)
+
+    .second-list
+      font-family: "OpenSansHebrew-Regular"
+
+  .wrap-list
+    font-family: "OpenSansHebrew-Bold"
+    font-size: 24px
+    .bold-list
+      margin-bottom: 0
+    .orang-list
+      margin-top: 0
+      color: #ff8800
+
+.mobile
+  display: none
+
+.main-list-title
+  color: #ff8800
+  font-size: 30px
+  font-family: "OpenSansHebrew-Bold"
+  margin: 50px 30px 10px
+
+
+
+
 .footer
   background-image: url(../img/background-footer.png)
-  min-height: 300px
+  //min-height: 300px
+  min-height: 220px
   position: relative
   width: 100%
   overflow: hidden
   direction: rtl
+  text-align: center
+  color: white
   background-repeat: no-repeat
+  background-size: cover
 
+  .wrap-title-footer
+    font-family: "OpenSansHebrew-Bold"
+    font-size: 26px
+    margin: 47px 0
+    color: rgb(255, 255, 255)
+    h3
+      text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 1.42)
 
+  .copyrate
+    font-family: "OpenSansHebrew-Regular"
+    font-size: 15px
 
-
-
-
-
-
-
-
+  .button
+    display: flex
+    justify-content: center
+    transform: skewX(-20deg)
+    //overflow: hidden
+    .button-maska
+      background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(93,93,93) 100%)
+      background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(93,93,93) 100%)
+      background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(93,93,93) 100%)
+      color: white
+      font-family: "OpenSansHebrew-Bold"
+      font-size: 28px
+      width: 290px
+      height: 60px
+      //overflow: hidden
+      border-radius: 10px
+      background-color: rgb(255, 255, 255)
+      transition: all .5s ease
+      &:hover
+        background-color: #dad8d2
+        //border-top: 2px solid red
+        text-decoration: none
+        color: white
+      a
+        padding: 5px
+        color: white
+        display: block
+        transform: skewX(20deg)
+        text-decoration: none
+        //pointer-events: none
+        //cursor: default
 
 
 
