@@ -227,7 +227,7 @@ img
   //display: block
   background: #353535
   //position: absolute
-  padding: 30px 0
+  padding: 20px 0
   padding-bottom: 15px
 
   h3
@@ -236,7 +236,7 @@ img
     font-family: "OpenSansHebrew-Bold", Helvetica
     font-size: 24px
     line-height: 1.1
-    margin: 0 0 30px
+    margin: 0 0 20px
 
   .form
     max-width: 1070px
@@ -268,11 +268,15 @@ img
         color: #111
 
   .checkbox-margin.form-row
+    display: flex
+    justify-content: flex-start
     width: 100%
 
   .check-stile
     height: 22px
     width: 22px
+    display: block
+    margin: 3px 0 0 7px
 
   .form-control
     transform: skewX(20deg)
@@ -312,6 +316,7 @@ img
       text-decoration: none
 
   .btn
+    position: relative
     transform: skewX(20deg)
     background: transparent
     border-radius: 13px
@@ -330,6 +335,28 @@ img
     font-size: 23px
     text-decoration: none
     //transition: all .5s ease
+
+  .btn-txt
+    display: inline-block
+    vertical-align: middle
+    padding: 2px
+    &:after
+      content: ''
+      width: 13px
+      height: 13px
+      border-left: 4px solid white
+      border-bottom: 4px solid white
+      display: inline-block
+      vertical-align: middle
+      transform: rotate(45deg)
+      position: relative
+      //margin: 0 4px
+
+
+
+
+
+
 
 
 //color: #111
@@ -433,23 +460,22 @@ img
     li
       list-style: none
       margin: 0 0 10px
+      font-family: "OpenSansHebrew-Regular"
     .first-list
-      font-family: "OpenSansHebrew-Bold"
       background-image: -moz-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(236,236,236) 50%, rgb(255,255,255) 100%)
       background-image: -webkit-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(236,236,236) 50%, rgb(255,255,255) 100%)
       background-image: -ms-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(236,236,236) 50%, rgb(255,255,255) 100%)
 
-    .second-list
-      font-family: "OpenSansHebrew-Regular"
 
   .wrap-list
     font-family: "OpenSansHebrew-Bold"
     font-size: 24px
+    color: #ff8800
     .bold-list
       margin-bottom: 0
     .orang-list
       margin-top: 0
-      color: #ff8800
+
 
 .mobile
   display: none
@@ -512,7 +538,7 @@ img
         text-decoration: none
         color: white
       a
-        padding: 5px
+        //padding: 5px
         color: white
         display: block
         transform: skewX(20deg)
@@ -520,8 +546,56 @@ img
         //pointer-events: none
         //cursor: default
 
+  .btn-txt
+    display: inline-block
+    vertical-align: middle
+    padding: 5px
+    &:after
+      content: ''
+      width: 13px
+      height: 13px
+      border-left: 4px solid white
+      border-bottom: 4px solid white
+      display: inline-block
+      vertical-align: middle
+      transform: rotate(45deg)
+      position: relative
+      margin: 0 4px
 
 
+
+//TNX
+.visual-content-tnx
+  direction: rtl
+  width: 100% //На мобиле сделать 100%
+  padding: 20px 15px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  .logo
+    //display: block
+    z-index: 23
+    margin: 40px 0 200px 0
+  //.title-header
+  //  font-family: "OpenSansHebrew-ExtraBoldItalic"
+  //  font-size: 60px
+  //  color: rgb(255, 255, 255)
+  //  line-height: 1.103
+  //  font-style: italic
+  //  text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 1.5)
+  //  margin: 70px 0 26px
+  .description-header
+    padding: 0
+    text-align: center
+    //display: block
+    font-size: 24px
+    font-family: "OpenSansHebrew-Bold"
+    color: #ff8800
+    line-height: 1.5
+    //text-shadow: 0.974px 6.932px 7px rgba(255, 132, 0, 1.5)
+    margin: 0
 
 
 

@@ -20,19 +20,19 @@ $umail = $_POST['email'];
 $check = $_POST['check1'];
 
 
-if ($check == 'on') {
-    $sendDok = $redirectURL . '/orange-theory-local/test.txt';
-    // prepare message text
-    $messageText =	'First Name: '.$ufname."\n".
-        'Phone: '.$uphone."\n".
-        'Email: '.$umail."\n".
-        'Dok: http://'.$sendDok."\n";
-}else{
+//if ($check == 'on') {
+//    $sendDok = $redirectURL . '/orange-theory-local/test.txt';
+//    // prepare message text
+//    $messageText =	'First Name: '.$ufname."\n".
+//        'Phone: '.$uphone."\n".
+//        'Email: '.$umail."\n".
+//        'Dok: http://'.$sendDok."\n";
+//}else{
     // prepare message text
     $messageText =	'First Name: '.$ufname."\n".
         'Phone: '.$uphone."\n".
         'Email: '.$umail."\n";
-}
+//}
 
 
 //// prepare message text
@@ -55,7 +55,8 @@ foreach ($targetEmail as $val){
 
 
 
-$redirectToTnxPage = 'http://campaign.gofmans.co.il/OTF/tnx.html?Lead=true';
+//$redirectToTnxPage = 'http://campaign.gofmans.co.il/OTF/tnx.html?Lead=true';
+$redirectToTnxPage = 'http://campaign.gofmans.co.il/orange-theory-local/thanks-page.html?Lead=true';
 // redirect
 if($redirectToReferer) {
     header("Location: ".$redirectToTnxPage);

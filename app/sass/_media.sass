@@ -17,14 +17,17 @@
   .header-section
     min-height: 600px
     background-size: cover
-    &:after
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      bottom: 80%
-      background: linear-gradient(to bottom,  rgba(255,0,0,5)  27%, rgba(0,0,0,0)  50%)
+    //&:after
+    //  content: ''
+    //  position: absolute
+    //  top: 0
+    //  left: 0
+    //  width: 100%
+    //  bottom: 80%
+      //background: linear-gradient(to bottom,  rgba(255,0,0,5)  27%, rgba(0,0,0,0)  50%)
+
+  .main
+    background: white !important
 
 
 /* Medium Devices, Desktops */
@@ -57,6 +60,9 @@
   //
   //
   .form-hold
+    padding: 15px 0
+    h3
+      margin: 0 0 15px
     .form-row
       width: 100%
       margin-bottom: 15px
@@ -71,12 +77,12 @@
 
 
     .form-control
-      height: 42px
+      height: 50px
       font-size: 18px
       transform: skewX(-20deg)
 
     .btn
-      height: 42px
+      height: 50px
       transform: skewX(20deg)
 
     .checkbox-margin
@@ -130,7 +136,6 @@
   .text-items
     font-family: "OpenSansHebrew-Regular"
 
-
   .main-list-title
     font-size: 25px
   .main-list
@@ -143,6 +148,16 @@
     background-size: cover
     background-image: url(../img/Background-mobyle1.jpg) !important
     background-repeat: no-repeat
+
+  .label
+    font-size: 10px
+    padding-top: 71px
+    bottom: 13%
+    &:after
+      top: 77%
+      left: 4px
+      width: 6px
+      height: 6px
 
   .main
     .wrap-title
