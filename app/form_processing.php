@@ -1,10 +1,10 @@
 <?php
 //****************************************
 //edit here
-$senderName = 'Ronson';
+$senderName = 'OrangeTheory';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['ravit@gofmans.co.il', 'office@ronson.co.il', 'idan@ronson.co.il'];
+$targetEmail = ['israel@gofmans.co.il', 'arkady.berkovsky@orangetheoryfitness.co.il', 'alex.berkovsky@orangetheoryfitness.co.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
@@ -20,25 +20,11 @@ $umail = $_POST['email'];
 $check = $_POST['check1'];
 
 
-//if ($check == 'on') {
-//    $sendDok = $redirectURL . '/orange-theory-local/test.txt';
-//    // prepare message text
-//    $messageText =	'First Name: '.$ufname."\n".
-//        'Phone: '.$uphone."\n".
-//        'Email: '.$umail."\n".
-//        'Dok: http://'.$sendDok."\n";
-//}else{
     // prepare message text
     $messageText =	'First Name: '.$ufname."\n".
         'Phone: '.$uphone."\n".
         'Email: '.$umail."\n";
-//}
 
-
-//// prepare message text
-//$messageText =	'First Name: '.$ufname."\n".
-//    'Phone: '.$uphone."\n".
-//    'Email: '.$umail."\n";
 
 // send email
 $senderName = "=?UTF-8?B?" . base64_encode($senderName) . "?=";
@@ -51,6 +37,24 @@ $messageHeaders = "From: " . $senderName . " <" . $senderEmail . ">\r\n"
 foreach ($targetEmail as $val){
     mail($val, $messageSubject, $messageText, $messageHeaders);
 }
+
+
+
+
+
+if ($check == 'on') {
+    $sendDok = 'yes';
+}else{
+    $sendDok = 'no';
+}
+$today = date("F j, Y, g:i a");
+
+$file = 'sample.csv';
+$tofile = "$ufname;$uphone;$umail;$sendDok;$today\n";
+$bom = "\xEF\xBB\xBF";
+@file_put_contents($file, $bom . $tofile . file_get_contents($file));
+
+
 
 
 

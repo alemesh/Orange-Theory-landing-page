@@ -79,7 +79,7 @@
     .form-control
       height: 50px
       font-size: 18px
-      transform: skewX(-20deg)
+      transform: skewX(0deg)
 
     .btn
       height: 50px
@@ -132,22 +132,36 @@
   .image-item
     width: 100px
     height: 100px
+    margin-bottom: 0
 
   .text-items
     font-family: "OpenSansHebrew-Regular"
+    p
+      margin-top: 5px
 
   .main-list-title
     font-size: 25px
   .main-list
     font-size: 17px
 
+
+  .visual-content-tnx
+    .description-header
+      font-size: 50px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .header-section
     min-height: 492px
     background-size: cover
-    background-image: url(../img/Background-mobyle1.jpg) !important
+    //background-image: url(../img/Background-mobyle1.jpg) !important
+    background-image: url(../img/background-mobile2.jpg) !important
     background-repeat: no-repeat
+
+  .thank-page
+    .header-section
+      background-image: url("../img/thanks-page-background.png") !important
+
 
   .label
     font-size: 10px
@@ -181,11 +195,15 @@
   .visual-content
     padding: 20px 0
     .title-header
+      text-shadow: none
       margin: 1px 0 12px
       font-size: 30px
     .description-header
+      text-shadow: none
       margin: 0
       font-size: 15px
+
+
 
     .logo
       margin: 0 auto 15px
