@@ -4,7 +4,7 @@
 $senderName = 'OrangeTheory';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['israel@gofmans.co.il', 'arkady.berkovsky@orangetheoryfitness.co.il', 'alex.berkovsky@orangetheoryfitness.co.il'];
+$targetEmail = ['israel@gofmans.co.il', 'arkady.berkovsky@orangetheoryfitness.co.il', 'alex.berkovsky@orangetheoryfitness.co.il','lhadar@orangetheoryfitness.co.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
@@ -20,10 +20,22 @@ $umail = $_POST['email'];
 $check = $_POST['check1'];
 
 
+if ($check == 'on') {
+    $sendDok = 'yes';
+
+
+}else{
+
+
+    $sendDok = 'no';
+}
+
+
     // prepare message text
     $messageText =	'First Name: '.$ufname."\n".
         'Phone: '.$uphone."\n".
-        'Email: '.$umail."\n";
+        'Email: '.$umail."\n".
+        'marketing c.box: '.$sendDok."\n";
 
 
 // send email
@@ -42,11 +54,7 @@ foreach ($targetEmail as $val){
 
 
 
-if ($check == 'on') {
-    $sendDok = 'yes';
-}else{
-    $sendDok = 'no';
-}
+
 $today = date("F j, Y, g:i a");
 
 $file = 'sample.csv';
