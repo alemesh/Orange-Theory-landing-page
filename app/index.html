@@ -5,14 +5,16 @@
 
 	<meta charset="utf-8">
 
-	<title>Orange Theory</title>
+	<title>Orange Theory FITNESS</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
+	<!--<link rel="shortcut icon" href="img/favicon/ico-orange.png" type="image/x-icon">-->
+	<link rel="shortcut icon" href="https://www.orangetheoryfitness.com/wp-content/uploads/2016/09/cropped-otf-32x32.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
@@ -77,7 +79,7 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper" id="form-scrol">
 	<div class="wrap-header">
 		<div class="header-section" style="background-image: url(img/img-visual.jpg)">
 			<span class="label">Gofman creative</span>
@@ -109,14 +111,14 @@
 					<div class="form-row-wrap">
 						<div class="form-row form-grow-1">
 							<div class="maska-input">
-								<input name="name" class="form-control" required data-required="true" type="text"  placeholder="*שם מלא">
+								<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם מלא">
 							</div>
 						</div>
 
 
 						<div class="form-row form-grow-2">
 							<div class="maska-input">
-								<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" data-regexp="(\+?\d[- .]*){7,13}" title="International, state or local telephone number">
+								<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
 							</div>
 						</div>
 						<div class="form-row form-grow-3">
@@ -215,10 +217,15 @@
                 <h3>אז למה להמשיך ולחכות שהמכשיר שלכם בחדר הכושר יתפנה? </h3>
                 <div class="button">
                     <div class="button-maska">
-						<a href="http://orangetheoryfitness.co.il/" target="_blank"><span class="btn-txt">לפרטים נוספים</span></a>
+						<!--<a href="http://orangetheoryfitness.co.il/" target="_blank"><span class="btn-txt">לפרטים נוספים</span></a>-->
+						<a href="#form-scrol"><span class="btn-txt">לפרטים נוספים</span></a>
                     </div>
                 </div>
-                <!--<p class="copyrate">UX & Design by GOFMAN CREATIVE </p>-->
+				<div class="gofman-link">
+					<a href="http://www.gofmans.co.il/" target="_blank">
+						<p class="copyrate">UX & Design by GOFMAN CREATIVE </p>
+					</a>
+				</div>
             </div>
         </div>
 

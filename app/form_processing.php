@@ -4,7 +4,7 @@
 $senderName = 'OrangeTheory';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['israel@gofmans.co.il', 'arkady.berkovsky@orangetheoryfitness.co.il', 'alex.berkovsky@orangetheoryfitness.co.il','lhadar@orangetheoryfitness.co.il'];
+$targetEmail = ['israel@gofmans.co.il', 'arkady.berkovsky@orangetheoryfitness.co.il', 'alex.berkovsky@orangetheoryfitness.co.il','lhadar@orangetheoryfitness.co.il', 'studioil001@orangetheoryfitness.co.il', 'studiomanageril001@orangetheoryfitness.co.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
